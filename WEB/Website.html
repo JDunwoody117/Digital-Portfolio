@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jamal Dunwoody | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="webstyle.css">
+
+</head>
+<body class="dark-mode">
+
+  <!-- 🔁 Video Background -->
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="IDK.mp4" type="video/mp4" />
+  </video>
+
+  <!-- 🔝 Navbar -->
+  <nav>
+    <div class="logo"></div>
+    <ul>
+  <li><a onclick="showModal('about')">About</a></li>
+  <li><a onclick="showModal('experience')">Experience</a></li>
+  <li><a onclick="showModal('honors')">Work & Honors</a></li>
+  <li><a onclick="showModal('contact')">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🎯 Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <p>Hello & Welcome</p>
+      <h1 id="typing-text"></h1>
+      <p>Creative. Analytical. Passionate. Ready for the future of tech.</p>
+      <button onclick="showModal('about')">About me</button>
+    </div>
+  </header>
+
+  <!-- 🌙 Dark Mode Toggle -->
+  <div class="toggle-container">
+    <button class="toggle-button" id="themeToggle" onclick="toggleDarkMode()">☾</button>
+  </div>
+
+  <!-- 📦 MODALS -->
+  <div class="modal" id="about">
+    <span class="close-btn" onclick="closeModals()">&times;</span>
+    <h2>About Me</h2>
+    <p>Hello, my name is Jamal Dunwoody, I am a senior Computer Science major at Southern University & A&M College, also a proud member of the legendary “Human Jukebox” Marching Band, where I’ve served as Section Leader, Bandsman of the Year, and a 2x Outstanding Performer. My experience in the band has instilled in me a relentless work ethic, strong leadership skills, and the ability to thrive under pressure, traits that directly influence how I approach every project in tech. <p>
+
+    </p>
+    <p>
+      In my academic and personal journey, I’ve developed a solid foundation in Java, C++, C#,  Object-Oriented Programming, and Data Structures, while also branching into areas like web development, mobile app development, cloud computing, and game programming. I enjoy bringing ideas to life, whether through code, designing user experiences, or experimenting with tools like Blender, Unity, Unreal Engine, and Visual Studio Code.  <p>
+
+      </p>
+      
+      I hold certifications including the AWS Academy Cloud Foundations, CodePath Android App Development Badge , and IBM AI Practitioner, which reflect my eagerness to stay ahead in this constantly evolving field. I’m also a fast learner with a strong attention to detail, and I take pride in being both a team player and an independent problem-solver. <p>
+      
+      While I’m passionate about game development, I’m also actively exploring opportunities in software engineering, web development, cloud, and cybersecurity. I’m currently seeking internship or part-time opportunities where I can apply my skills, grow professionally, and contribute meaningfully to innovative teams. <p>
+
+      </p>
+      
+      Thank you for visiting my site and taking the time to learn more about me, I greatly appreciate it.
+       </p>
+  </div>
+
+  <div class="modal" id="experience">
+    <span class="close-btn" onclick="closeModals()">&times;</span>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Southern University & A&M College – Baton Rouge, LA</strong><br>
+        Senior Computer Science Major | Aug 2021 – May 2026</li>
+      <li><strong>Walmart Inc – McDonough, GA</strong><br>
+        Electronics Associate | March 2024 – Present<br></li>
+     <li> <strong>Surge Entertainment – February 2024 – Present. Location: Baton Rouge, Louisiana</strong><br>
+      Team Attendant & Team Lead</li>
+    <li>  Serves in a dynamic, multi-functional role assisting guests and ensuring smooth operations in a high-energy entertainment environment.
+      Responsible for customer service at the prizes counter and concessions, including managing transactions, handling cash and card payments, and resolving guest inquiries.
+      Maintain accurate inventory by restocking merchandise and monitoring supply levels, ensuring shelves are always neat and well-stocked.
+     <p> Act as a Team Lead, guiding and mentoring team members, assisting with training, and supporting daily operational decisions.
+      Regularly recognized for professionalism, reliability, and excellent customer interaction—frequently mentioned in positive Google reviews.
+      Thrive in a fast-paced, customer-focused environment with an emphasis on teamwork, leadership, and adaptability.</li>
+     </p>
+      </ul>
+
+    </ul>
+  </div>
+
+  <div class="modal" id="honors">
+    <span class="close-btn" onclick="closeModals()">&times;</span>
+    <h2>Accomplishments & Honors</h2>
+    <ul>
+      <li>Outstanding Performer (2x) – Human Jukebox Marching Band</li>
+      <li>Bandsmen of the Year (2025)</li>
+      <li>Section Leader, Human Jukebox (2024-2025)</li>
+      <li>National Honors Society</li>
+      <li>Red Dawg Order Inc. Member</li>
+      <li>Leadership & Legacy Scholarship Recipient</li>
+      <li>Southern University Cleaning Committee (2022–2025)</li>
+      <li>IBM AI Practitioner, Cybersecurity Badge</li>
+      <li>IBM Data Science certification</li>
+      <li>AWS Cloud Foundations Graduate</li>
+    </ul>
+  </div>
+
+  <div class="modal" id="contact">
+    <span class="close-btn" onclick="closeModals()">&times;</span>
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:Dunwoodyjamal@gmail.com">Dunwoodyjamal@gmail.com</a><br>
+      Phone: (404) 468-4381<br><br>
+      <a href="file:///Users/jamaldunwody/Downloads/Resume%202026.pdf" target="_blank">Resume</a><br>
+      <a href="https://github.com/JDunwoody117" target="_blank">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/jamal-dunwoody-98aa23265/" target="_blank">LinkedIn</a><br>
+      <a href="https://subr.joinhandshake.com/profiles/8ujwhy" target="_blank">HandShake</a>
+
+    </p>
+  </div>
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Sudoku Puzzle Game</h3>
+        <p>A web-based 2D Sudoku game with dark mode and visual feedback.</p>
+        <a href="https://github.com/JDunwoody117/sudoku-game" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>This Website!</h3>
+        <p>An Interactive Portfolio Website made strictly with HTML and CSS to showcase my skills and to share information. </p>
+        <a href="https://github.com/JDunwoody117/chess-game" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- 🔧 Script -->
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      const toggleButton = document.getElementById('themeToggle');
+  
+      // Toggle the class on the body
+      body.classList.toggle('light-mode');
+  
+      // Change the icon based on the current mode
+      if (body.classList.contains('light-mode')) {
+        toggleButton.textContent = '☀'; // Light mode = sun
+      } else {
+        toggleButton.textContent = '☾'; // Dark mode = moon
+      }
+    }
+  
+    // Optional: Set correct icon on page load (in case it starts in light mode)
+    window.onload = () => {
+      const toggleButton = document.getElementById('themeToggle');
+      if (document.body.classList.contains('light-mode')) {
+        toggleButton.textContent = '☀';
+      } else {
+        toggleButton.textContent = '☾';
+      }
+    }
+
+    function showModal(id) {
+      closeModals();
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModals() {
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.style.display = 'none';
+      });
+    }
+  </script>
+<script>
+  const text = "I am Jamal Dunwoody";
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter,245); // Speed: 100ms per letter
+    }
+    else {
+      // Remove the blinking cursor after typing is done
+      document.getElementById("typing-text").style.borderRight = "none";
+    }
+    }
+
+  window.onload = typeWriter;
+
+
+
+
+</script>
+
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-bar">
+      <span>HTML</span>
+      <div class="bar-container" data-skill="HTML">
+        <div class="bar-fill"></div>
+        <div class="bar-percent">40%</div>
+      </div>
+    </div>
+
+    <div class="skill-bar">
+      <span>Java</span>
+      <div class="bar-container" data-skill="Java">
+        <div class="bar-fill"></div>
+        <div class="bar-percent">40%</div>
+      </div>
+    </div>
+
+    <div class="skill-bar">
+      <span>C++</span>
+      <div class="bar-container" data-skill="C++">
+        <div class="bar-fill"></div>
+        <div class="bar-percent">40%</div>
+      </div>
+    </div>
+
+    <div class="skill-bar passion">
+      <span>PASSION</span>
+      <div class="bar-container">
+        <div class="bar-fill"></div>
+        <div class="bar-percent">100%</div>
+        <div class="fire-sparks"></div>
+      </div>
+    </div>
+
+    <div class="badges">
+      <div class="badge bounce">AWS</div>
+      <div class="badge spin">IBM</div>
+      <div class="badge float">AI</div>
+    </div>
+    <canvas id="explosion-canvas"></canvas>    
+    
+    
+  </div>
+</section>
+
+
+
+<script>
+  const skillBars = document.querySelectorAll('.skill-bar');
+  
+  skillBars.forEach((bar) => {
+    if (!bar.classList.contains('passion')) {
+      const fill = bar.querySelector('.bar-fill');
+      const percent = bar.querySelector('.bar-percent');
+      function updateBar() {
+        let random = Math.floor(Math.random() * 61) + 40; // 40% to 100%
+        fill.style.width = random + '%';
+        percent.textContent = random + '%';
+      }
+      setInterval(updateBar, Math.floor(Math.random() * 3000 + 2000));
+    }
+  });
+  </script>
+<script>
+  const canvas = document.getElementById("explosion-canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  
+  let particles = [];
+  
+  class Particle {
+    constructor(x, y, color) {
+      this.x = x;
+      this.y = y;
+      this.radius = Math.random() * 3 + 2;
+      this.color = color;
+      this.velocityX = (Math.random() - 0.5) * 6;
+      this.velocityY = (Math.random() - 0.5) * 6;
+      this.alpha = 1;
+    }
+  
+    draw() {
+      ctx.save();
+      ctx.globalAlpha = this.alpha;
+      ctx.beginPath();
+      ctx.fillStyle = this.color;
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.closePath();
+      ctx.restore();
+    }
+  
+    update() {
+      this.x += this.velocityX;
+      this.y += this.velocityY;
+      this.alpha -= 0.02;
+    }
+  }
+  
+  function createExplosion(x, y, color) {
+    for (let i = 0; i < 20; i++) {
+      particles.push(new Particle(x, y, color));
+    }
+  }
+  
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+    particles.forEach((p, i) => {
+      if (p.alpha <= 0) {
+        particles.splice(i, 1);
+      } else {
+        p.update();
+        p.draw();
+      }
+    });
+  }
+  animate();
+  
+  document.querySelectorAll(".badge").forEach(badge => {
+    badge.addEventListener("mouseenter", e => {
+      const rect = badge.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+  
+      // Optional: Color based on badge
+      let color = "#00aaff";
+      if (badge.textContent.includes("AWS")) color = "#FF9900";
+      if (badge.textContent.includes("IBM")) color = "#4178BE";
+      if (badge.textContent.includes("AI")) color = "#8A2BE2";
+  
+      createExplosion(x, y, color);
+    });
+  });
+  
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+  </script>
+  
+
+<footer>
+  <p>&copy; 2025 Jamal Dunwoody. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
