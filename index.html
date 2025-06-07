@@ -13,20 +13,27 @@
 <body class="dark-mode">
 
   <!-- 🔁 Video Background -->
-  <video autoplay muted loop playsinline id="bgVideo">
-    <source src="IDK.mp4" type="video/mp4" />
+  <video autoplay muted loop id="bgVideo">
+    <source src="Video.mp4" type="video/mp4" />
+  
   </video>
+  
+
+
 
   <!-- 🔝 Navbar -->
-  <nav>
-    <div class="logo"></div>
-    <ul>
-  <li><a onclick="showModal('about')">About</a></li>
-  <li><a onclick="showModal('experience')">Experience</a></li>
-  <li><a onclick="showModal('honors')">Work & Honors</a></li>
-  <li><a onclick="showModal('contact')">Contact</a></li>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><button onclick="openModal('about')">About</button></li>
+      <li><button onclick="openModal('experience')">Experience</button></li>
+      <li><button onclick="openModal('honors')">Honors</button></li>
+      <li><button onclick="openModal('contact')">Contact</button></li>
+
     </ul>
   </nav>
+  
+
+
 
   <!-- 🎯 Hero Section -->
   <header class="hero">
@@ -121,14 +128,17 @@
     <h2>My Projects</h2>
     <div class="project-cards">
       <div class="project-card">
-        <h3>Sudoku Puzzle Game</h3>
-        <p>A web-based 2D Sudoku game with dark mode and visual feedback.</p>
-        <a href="https://github.com/JDunwoody117/sudoku-game" target="_blank">View Project</a>
+        <h3>Stock Prediction app</h3>
+        <p>A Smart Stock Forecasting app combining Machine Learning, and Mobile UX/UI Design Built with Android Studio (Kotlin) and a Python Flask backend. With the following
+
+          features, Real-time news sentiment integration, Dark mode and mobile-friendly UI,  Alerts for major predicted drops or spikes,  and predicts stock trends using LSTM + FinBERT  <p>Coming Soon!</p>
+</p>
+        <a href="https://github.com/JDunwoody117/StockPredictionApp" target="_blank">View Project</a>
       </div>
       <div class="project-card">
         <h3>This Website!</h3>
         <p>An Interactive Portfolio Website made strictly with HTML and CSS to showcase my skills and to share information. </p>
-        <a href="https://github.com/JDunwoody117/chess-game" target="_blank">View Project</a>
+        <a href="https://jdunwoody117.github.io/Digital-Portfolio/" target="_blank">View Project</a>
       </div>
     </div>
   </section>
@@ -136,6 +146,7 @@
 
   <!-- 🔧 Script -->
   <script>
+   
     function toggleDarkMode() {
       const body = document.body;
       const toggleButton = document.getElementById('themeToggle');
@@ -180,7 +191,7 @@
     if (i < text.length) {
       document.getElementById("typing-text").innerHTML += text.charAt(i);
       i++;
-      setTimeout(typeWriter,245); // Speed: 100ms per letter
+      setTimeout(typeWriter,255); // Speed: 100ms per letter
     }
     else {
       // Remove the blinking cursor after typing is done
@@ -341,6 +352,27 @@
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   });
+  </script>
+  
+
+
+
+  <script>
+    function openModal(id) {
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  
+    function closeModals() {
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+  
+    // Optional: close modal when clicking outside it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    };
   </script>
   
 
