@@ -38,12 +38,12 @@ body.light-mode {
 nav {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 100;
+  width: 70%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0.8rem;
   z-index: 800;
