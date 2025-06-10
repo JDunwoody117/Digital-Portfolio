@@ -628,12 +628,6 @@ nav span {
 
 
 
-button, input, .contact-form input, .contact-form textarea {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px auto;
-  display: block;
-}
 
 @media (max-width: 768px) {
   button {
