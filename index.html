@@ -13,12 +13,16 @@
 <body class="dark-mode">
 
   <!-- 🔁 Video Background -->
+ <!-- 🔁 Responsive Video Background -->
+<div class="video-container">
   <video id="bgVideo" autoplay muted loop playsinline>
-    <source src="Video.mp4" type="video/mp4">
-    <img src="picture.jpg" alt="Background" class="fallback-image" />
-  </div>
+    <source src="Video.mp4" type="video/mp4" />
+    <!-- This part won't show unless video fails entirely -->
+    Your browser does not support the video tag.
   </video>
-  
+  <img src="picture.jpg" alt="Background fallback" class="fallback-image" />
+</div>
+
   
 
 
