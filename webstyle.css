@@ -60,7 +60,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #000000;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 300;
   transition: color 0.3s ease;
@@ -564,14 +564,15 @@ footer {
 
 .nav-links li a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   font-size: 1.1rem;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #000000; /* gold highlight on hover */
+  color: var(--accent-color); /* gold highlight on hover */
+  text-shadow: var(--card-bg);
 }
 
 nav button,
@@ -609,5 +610,18 @@ nav span {
   color: #00d4ff;
 }
 
+
+
+.modal a {
+  color: var(--text-color); /* or any color you want */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.modal a:hover {
+  color: #ff3c00; /* hover color */
+  text-shadow: 0 0 5px #ff3c00;
+}
 
 
