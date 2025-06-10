@@ -625,25 +625,6 @@ nav span {
 }
 
 
-@media (max-width: 768px) {
-  video {
-    display: none;
-  }
-  .fallback-image {
-    display: block;
-  }
-}
-
-
-.fallback-image {
-  display: none;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 
 
